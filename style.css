@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+:root {
+  font-size: 62,5%;
+
+  --ff-one: roboto, bold;
+  --bc-one:white;
+}
+
+html.light{
+  background: black;
+  
+}
+html.light .app button {  
+  background-color:#f8f8fa;
+  font-size:4rem;
+  border-radius: 0.8rem;  
+}
+
+html.light #timer{
+  color: white;
+}
+
+html.light .ph-sun,
+html:not(.light) .ph-moon{
+  display: none;
+  background-color: white;
+}
+
+#apptwo {
+  display:flex;
+  align-items: center;  
+}
+
+#toggle-mode{
+  position: absolute;
+  right:3.2rem;
+  top:3.2rem;
+  font-size: 3.2rem;
+  line-height: 0;
+
+  color:var(--text-color);
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding:0px;
+  border: 0;
+  appearance: none;
+}
+
+body {  
+  height:128rem;
+
+  font-family: var(--ff-one);
+
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: center;
+    align-items: center;    
+}
+
+.app { 
+  height: 21rem;
+  width: 32rem;     
+
+  font-size: 10rem;  
+}
+
+#timer {
+  height: 12rem;
+  width: 32rem;
+}
+
+#controls {
+  height: 4.8rem;
+  width: 4.8rem; 
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4.5rem;
+
+  margin-top: 1rem;
+}
+
+.app button {  
+  background-color: white;
+  font-size:4rem;
+  border-radius: 0.8rem;
+  
+}
+
+.climate {
+  width: 34rem;
+  height: 31rem;
+
+  margin-left: 19rem;  
+}
+
+#controlsclimate button{
+  font-size:6rem;
+  border-radius: 0.8rem;
+
+  width: 14rem;
+  height: 15rem;
+
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;  
+  
+}
+
+.ph.active {
+  background-color: #836FFF;
+  transition: background-color 1s;
+}
+
+
+
+

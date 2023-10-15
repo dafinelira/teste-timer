@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+  <title>Timer Focus</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./src/main.js" defer></script>
+
+</head>
+<body>
+    <div id="apptwo">
+    <button id="toggle-mode">      
+      <i class="ph ph-sun"></i>
+      <i class="ph ph-moon"></i>
+    </button>
+
+  <div class="app">
+      <section id="timer" class="flex">
+      <span id="minutes">25</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+
+        <section id="controls" class="flex">
+          
+          <button data-action="toggleRunning"         class="ph ph-play-circle">
+          </button>
+          <button id="stop" data-action="stop" 
+            class="ph ph-stop-circle">
+          </button>
+          <button id="highButton" data-action="high" 
+            class="ph ph-plus">
+          </button>
+          <button id="lowButton" data-action="low" 
+            class="ph ph-minus">
+          </button>
+
+  </div>
+
+    <div class="climate">
+      <section id="controlsclimate">              
+        <button class="ph ph-tree" data-audio="./src/focusTimer/assets/Floresta(1).wav"></button>    
+        <button class="ph ph-cloud-rain" data-audio="./src/focusTimer/assets/Chuva(1).wav"></button>
+        <button class="ph ph-coffee" data-audio="./src/focusTimer/assets/Cafeteria(1).wav"></button>
+        <button class="ph ph-fire" data-audio="./src/focusTimer/assets/Lareira(1).wav"></button>
+      </section>
+    </div>  
+  
+</body>
+</html>
